@@ -1,0 +1,29 @@
+USAGE
+
+    python finder.py <option> root string/filename/dirname [extension]
+
+DESCRIPTION
+
+    Program built for finding files and/or directories matching a given criteria within a tree starting with root.
+    The criteria can be a string (in which case all files and directories containg it will be considered matches)
+    or the full filename/dirname.
+    If called without options it will find and print all files and directories containing the given string in
+    their basename (extension excluded).
+
+OPTIONS
+
+    -e [--exact]
+        Print all files and directories who's name matches exactly the given filename/dirname.
+    
+    -h [--help]
+        Show this manual page.
+
+    -x [--extension]
+        Print all files containing the given string in their basename and that have the given extension.
+
+CAVEATS
+
+    The last argument ([extension]) will be evaluated only if the -x option is used, in which case is mandatory.
+
+
+The program has been developed by Ansel Umana.
